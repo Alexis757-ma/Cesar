@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCUMENT</title>
+</head>
+<body>
+   <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/logo.png" alt="logo">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="fondo">
+      <img src="imágenes/fondo.jpg" alt="fondo">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/alexis.jpg" alt="foto alexis">
+      </div>
+      <div class="information">
+        <h1>
+          Cesar alexis Gómez Gómez 
+        </h1>
+        <span>
+          @PekeStyle
+        </span>
+        <p> Graduado en el colegio Jaime Garzón|excelente estudiante pase a la universidad Simón Bolívar|sacando el título de Diseño de moda</p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+         Quiero hablar de lo bueno y creativo que soy como diseñador de ropa oversize. Me destaco porque mi estilo único refleja una visión contemporánea que celebra tanto la comodidad como la individualidad. Cada prenda que creo tiene un toque especial, ya sea por los colores vibrantes que elijo o por los patrones innovadores que mezclo.
+
+Las piezas oversize que creo no solo son cómodas, sino que también son una declaración de estilo. Logro combinar funcionalidad con moda de una manera excepcional. Cada vez que alguien usa mis diseños, no solo se siente bien físicamente, sino que también proyecta confianza y autenticidad.
+
+Sigo brillando y creando esas piezas asombrosas porque sé que el mundo de la moda necesita más de mi creatividad y talento.
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a
+          href="https://es.wikipedia.org/wiki/Dise%C3%B1o_de_moda"  
+             class="social-icon" id="LinkedIn"><img src="imágenes/iconos/linkedin.png" alt="linkedin"> </a>
+         </li>
+        <li>
+           <a
+ href="https://merida.anahuac.mx/licenciaturas/blog/diseno-de-moda-y-su-influencia-en-la-sociedad"
+             class="social-icon" id="github"><img src="imágenes/iconos/github.png" alt="github"></a> 
+        </li>
+        <li>
+           <a 
+             href="https://www.format.com/es/online-portfolio-website/diseno-de-moda/guide"
+             class="social-icon" id="Twitter"><img src="imágenes/iconos/twitter.png" alt="Twitter"></a> 
+        </li>
+      </ul>
+   <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+   </div>
+    </main>
+   <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+   </script>
+</div>
+</body>
+</html>
